@@ -1,0 +1,101 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+/*Modificacion del titulo*/
+.text-center, #tituloTicket {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+}
+
+/*Modificacion de los objetos de la tienda*/
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    text-align: center;
+}
+
+/*Modificacion de los inputs*/
+.card-input {
+    border: none;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.card-input:hover {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.card-input:focus {
+    outline: none;
+}
+
+/*Modificacion del boton*/
+button {
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+button:hover {
+    color: rgb(205, 205, 205);
+    transition: 0.3s;
+}
+
+/*Modificacion del resumen de compra*/
+#tablaCarrito{
+    margin: auto;
+}
+
+#tiuloResumenCompra{
+    font-size: 24px;
+    color: #333;
+}
+
+.table{
+    border-spacing: 10px;
+}
+
+.catidad-producto-tabla{
+    text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    #catalogo {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
