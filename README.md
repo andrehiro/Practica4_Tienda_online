@@ -64,7 +64,7 @@ Hacemos que al clicar el botón compremos el producto, es decir que se muestre e
         actualizarResumenCompra();
     }
 ```
-
+Esta es la función que se ejecuta al aplastar el botón anterior, en pocas palabra verifica si ya se encuentra el producto en el carrito de ser así simplemente se suma al a existente y de no ser así se agrega al carrito.
 ``` javascript
     function actualizarResumenCompra() {
         // Limpia el resumen de compra
@@ -85,13 +85,17 @@ Hacemos que al clicar el botón compremos el producto, es decir que se muestre e
 
         // Actualiza el total
         total.textContent = `$${subtotalTotal}`;
-
         localStorage.setItem('carrito', JSON.stringify(carrito));
     }
-    botonfinalizarCompra.addEventListener("click", function (event) {
-        localStorage.setItem('total', total.textContent);
-        window.location.href = "ticket.html";
-    });
 });
-
 ```
+Este metodo simplemente te muestra el resumen de compra
+
+### En el código js, ¿qué tipo de variable es "catalogo"? ¿Como se manipula?
+Es una variable de tipo array. Y se puede manipular accediendo a los objetos y propiedades que contiene. Por ejemplo, para acceder al primer producto en el catálogo y obtener su nombre, puedes hacerlo de la siguiente manera:
+``` javascript
+const primerProducto = catalogo[0]; 
+const nombreDelProducto = primerProducto.id; 
+
+``` 
+
