@@ -98,4 +98,11 @@ const primerProducto = catalogo[0];
 const nombreDelProducto = primerProducto.id; 
 
 ``` 
+### ¿Qué hace const card = document.createElement("div") ?
+Crea un nuevo elemento HTML por medio de JavaScript. En este caso, se está creando un elemento div y se guarda en la constante card.
 
+### ¿Qué hace card.innerHTML?
+Permite acceder y manipular el contenido HTML dentro del elemento card.
+
+### ¿Qué hace catalogoContainer.appendChild(card)?
+Se utiliza para agregar un elemento en este caso card como un hijo a otro elemento en este caso catalogoContainer. Es decir que estamos insertando la tarjeta del producto en un contenedor específico de la página web.
