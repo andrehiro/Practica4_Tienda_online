@@ -10,13 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Agrega más productos aquí
     ];
 ```
-hola
+Catalogo es un array en el cual se declaran y guardan los productos que se venderán en la tienda.
 ``` javascript
-
-    const botonfinalizarCompra = document.getElementById("finalizarCompra");
-    const catalogoContainer = document.getElementById("catalogo");
-    const resumenCompra = document.getElementById("resumenCompra");
-    const total = document.getElementById("total");
 
     // Genera las tarjetas de productos en el catálogo
     catalogo.forEach((producto) => {
@@ -45,7 +40,9 @@ hola
             }
         });
     });
-
+```
+Catalogo es un array en el cual se declaran y guardan los productos que se venderán en la tienda.
+``` javascript
     const carrito = [];
 
     function agregarProductoAlCarrito(producto, cantidad) {
