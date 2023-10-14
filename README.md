@@ -1,6 +1,6 @@
 # Practica4_Tienda_online
 
-``` ruby
+``` javascript
 if(){
 print.
 }
