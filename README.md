@@ -1,6 +1,7 @@
 # Practica4_Tienda_online
 Andre Alexander Hidrogo Rocha 11/10/2023 Es un ejemplo basico de una tienda enlinea
 
+### Explique cada una de las funciones del código JavaScript
 ``` javascript
 document.addEventListener("DOMContentLoaded", function () {
     const catalogo = [
@@ -29,7 +30,9 @@ Catalogo es un array en el cual se declaran y guardan los productos que se vende
     </div>
 `;
         catalogoContainer.appendChild(card);
-
+```
+En este método lo que hacemos es que, por cada producto en el catálogo, hacemos que este se muestre en la pagina (imagen, nombre y costo), además de agregarle un botón y un input para comprar el producto y poder escribir la cantidad a comprar.
+``` javascript
         // Agrega un evento de clic al botón de "Agregar al Carrito"
         const botonAgregar = card.querySelector("button");
         botonAgregar.addEventListener("click", function () {
@@ -41,7 +44,7 @@ Catalogo es un array en el cual se declaran y guardan los productos que se vende
         });
     });
 ```
-Catalogo es un array en el cual se declaran y guardan los productos que se venderán en la tienda.
+Hacemos que al clicar el botón compremos el producto, es decir que se muestre en el resumen de compra. También le ponemos la condición al botón que solo funcionara si la cantidad de productos a comprar es mayor a 0.
 ``` javascript
     const carrito = [];
 
@@ -60,7 +63,9 @@ Catalogo es un array en el cual se declaran y guardan los productos que se vende
         // Actualiza el resumen de la compra
         actualizarResumenCompra();
     }
+```
 
+``` javascript
     function actualizarResumenCompra() {
         // Limpia el resumen de compra
         resumenCompra.innerHTML = "";
